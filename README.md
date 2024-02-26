@@ -1,6 +1,6 @@
 # Number Generator
 
-Number generator in Python  
+Number generator in Python 3.8   
 
 ## Prerequisites
 
