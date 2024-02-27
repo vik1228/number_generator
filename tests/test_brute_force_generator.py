@@ -23,8 +23,8 @@ for n, nums in test_cases:
     start = time.time_ns()
     numbers = generate_numbers_brute_force(n, nums)
     end = time.time_ns()
-    # print('List of numbers:')
-    # print(numbers)
+    print('List of numbers:')
+    print(numbers)
     print(f'Length of list: {len(numbers)}')
     print(f"(Expected length {len(nums)}^{n} = {pow(len(nums), n)})")
     assert len(numbers) == pow(len(nums), n), "get what we expected ?!? [in length]"

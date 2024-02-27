@@ -1,0 +1,6 @@
+Generate with builtin (N=2, nums=128)
+List of numbers:
+['11', '12', '18', '21', '22', '28', '81', '82', '88']
+Length of list: 9
+(Expected length 3^2 = 9)
+Execution time: 0 ns , 0.0 us , 0.0 ms, 0.0 s 

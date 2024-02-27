@@ -1,0 +1,6 @@
+Generate with builtin (N=3, nums=64)
+List of numbers:
+['666', '664', '646', '644', '466', '464', '446', '444']
+Length of list: 8
+(Expected length 2^3 = 8)
+Execution time: 0 ns , 0.0 us , 0.0 ms, 0.0 s 
