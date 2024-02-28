@@ -38,3 +38,25 @@ def generate_numbers_brute_force(n=2, nums='357'):
         else:
             numbers.append(num)
     return numbers
+
+
+def generate_numbers_with_backtrack(n, nums):
+    """
+    Generate numbers with backtrack
+    :param n: number of digits
+    :param nums: possible numbers
+    :return: list of numbers (string-format)
+    """
+    combinations = []
+
+    def backtrack(combination):
+        if len(combination) == n:
+            combinations.append(''.join(combination))
+            return
+        for num in [*nums]:
+            combination.append(num)
+            backtrack(combination)
+            combination.pop()
+
+    backtrack([])
+    return combinations
