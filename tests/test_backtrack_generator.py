@@ -3,6 +3,7 @@
 """
 Created on 2024.02.28.
 @author: vik1228
+Basic tests for backtrack generator
 """
 
 from utils.functions import generate_numbers_with_backtrack

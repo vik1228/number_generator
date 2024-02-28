@@ -15,39 +15,22 @@ if __name__ == "__main__":
     nums = '357'
     # Note: Brute force generator can cause MemoryError !
 
-    print("Generate with builtin")
-    start = time.time_ns()
-    numbers = generate_numbers_with_builtin(n, nums)
-    end = time.time_ns()
-    print('List of numbers:')
-    print(numbers)
-    print(f'Length of list: {len(numbers)}')
-    print(f"(Expected length {len(nums)}^{n} = {pow(len(nums),n)})")
-    t_exe = end-start
-    print(f"Execution time: {t_exe} ns , {t_exe/1000} us , {t_exe/1000000} ms, {t_exe/1000000000} s ")
-    print('*' * 100)
+    functions = [
+        ("Generate with builtin", generate_numbers_with_builtin),
+        ("Generate with brute force", generate_numbers_brute_force),
+        ("Generate with backtrack", generate_numbers_with_backtrack)
+    ]
 
-    print("Generate with brute force")
-    start = time.time_ns()
-    numbers = (generate_numbers_brute_force(n, nums))
-    end = time.time_ns()
-    print('List of numbers:')
-    print(numbers)
-    print(f'Length of list: {len(numbers)}')
-    print(f"(Expected length {len(nums)}^{n} = {pow(len(nums),n)})")
-    t_exe = end-start
-    print(f"Execution time: {t_exe} ns , {t_exe/1000} us , {t_exe/1000000} ms, {t_exe/1000000000} s ")
-    print('*' * 100)
+    for name, function in functions:
 
-    print("Generate with backtrack")
-    start = time.time_ns()
-    numbers = generate_numbers_with_backtrack(n, nums)
-    end = time.time_ns()
-    print('List of numbers:')
-    print(numbers)
-    print(f'Length of list: {len(numbers)}')
-    print(f"(Expected length {len(nums)}^{n} = {pow(len(nums),n)})")
-    t_exe = end-start
-    print(f"Execution time: {t_exe} ns , {t_exe/1000} us , {t_exe/1000000} ms, {t_exe/1000000000} s ")
-    print('*' * 100)
-
+        print(name)
+        start = time.time_ns()
+        numbers = function(n, nums)
+        end = time.time_ns()
+        print('List of numbers:')
+        print(numbers)
+        print(f'Length of list: {len(numbers)}')
+        print(f"(Expected length {len(nums)}^{n} = {pow(len(nums),n)})")
+        t_exe = end-start
+        print(f"Execution time: {t_exe} ns , {t_exe/1000} us , {t_exe/1000000} ms, {t_exe/1000000000} s ")
+        print('*' * 100)
