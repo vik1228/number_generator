@@ -7,22 +7,22 @@ Created on 2024.02.26.
 from itertools import product
 
 
-def generate_numbers_with_builtin(n=5, nums='357'):
+def generate_numbers_with_builtin(n=2, nums='357'):
     """
     Generate numbers with builtin method/class (itertools.product)
     :param n: number of digits
-    :param nums: possible numbers
+    :param nums: possible digits
     :return: list of numbers (string-format)
     """
     products = [i for i in product(*([nums] * n))]
     return [''.join(number) for number in products]
 
 
-def generate_numbers_brute_force(n=2, nums='357'):
+def generate_numbers_with_brute_force(n=2, nums='357'):
     """
     Generate numbers with brute force
     :param n: number of digits
-    :param nums: possible numbers
+    :param nums: possible digits
     :return: list of numbers (string-format)
     """
     all_digits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
@@ -40,11 +40,11 @@ def generate_numbers_brute_force(n=2, nums='357'):
     return numbers
 
 
-def generate_numbers_with_backtrack(n, nums):
+def generate_numbers_with_backtrack(n=2, nums='357'):
     """
     Generate numbers with backtrack
     :param n: number of digits
-    :param nums: possible numbers
+    :param nums: possible digits
     :return: list of numbers (string-format)
     """
     combinations = []

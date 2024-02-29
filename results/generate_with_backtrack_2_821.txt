@@ -1,0 +1,5 @@
+Generate with backtrack (N=2, nums=821)
+['88', '82', '81', '28', '22', '21', '18', '12', '11']
+Length of list: 9
+(Expected length 3^2 = 9)
+Execution time: 0 ns , 0.0 us , 0.0 ms, 0.0 s 

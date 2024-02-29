@@ -1,0 +1,5 @@
+Generate with backtrack (N=3, nums=46)
+['444', '446', '464', '466', '644', '646', '664', '666']
+Length of list: 8
+(Expected length 2^3 = 8)
+Execution time: 0 ns , 0.0 us , 0.0 ms, 0.0 s 

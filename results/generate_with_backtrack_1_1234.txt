@@ -1,5 +1,5 @@
-Generate with builtin (N=1, nums=2468)
-['2', '4', '6', '8']
+Generate with backtrack (N=1, nums=1234)
+['1', '2', '3', '4']
 Length of list: 4
 (Expected length 4^1 = 4)
 Execution time: 0 ns , 0.0 us , 0.0 ms, 0.0 s 

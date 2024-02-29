@@ -1,5 +1,4 @@
 Generate with brute force (N=1, nums=1234)
-List of numbers:
 ['1', '2', '3', '4']
 Length of list: 4
 (Expected length 4^1 = 4)

@@ -1,6 +1,5 @@
 Generate with brute force (N=3, nums=46)
-List of numbers:
 ['444', '446', '464', '466', '644', '646', '664', '666']
 Length of list: 8
 (Expected length 2^3 = 8)
-Execution time: 2998600 ns , 2998.6 us , 2.9986 ms, 0.0029986 s 
+Execution time: 2996700 ns , 2996.7 us , 2.9967 ms, 0.0029967 s 

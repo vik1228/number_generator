@@ -1,5 +1,4 @@
 Generate with brute force (N=2, nums=821)
-List of numbers:
 ['11', '12', '18', '21', '22', '28', '81', '82', '88']
 Length of list: 9
 (Expected length 3^2 = 9)

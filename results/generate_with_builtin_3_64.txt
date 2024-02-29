@@ -1,5 +1,4 @@
 Generate with builtin (N=3, nums=64)
-List of numbers:
 ['666', '664', '646', '644', '466', '464', '446', '444']
 Length of list: 8
 (Expected length 2^3 = 8)
