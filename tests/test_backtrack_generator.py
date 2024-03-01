@@ -49,5 +49,3 @@ for n, nums in test_cases:
         file.write(str_expected)
         file.write('\n')
         file.write(str_exe)
-
-

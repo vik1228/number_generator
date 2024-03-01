@@ -3,6 +3,7 @@
 """
 Created on 2024.02.29.
 @author: vik1228
+Simple (smoke) test for all generator
 """
 from utils.functions import generate_numbers_with_builtin, generate_numbers_with_brute_force, generate_numbers_with_backtrack
 
