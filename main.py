@@ -20,7 +20,7 @@ if __name__ == "__main__":
         ("Generate with builtin", generate_numbers_with_builtin),
         ("Generate with brute force", generate_numbers_with_brute_force),
         ("Generate with backtrack", generate_numbers_with_backtrack),
-        ("Generate with generator", generate_numbers_with_yield()),
+        ("Generate with yield", generate_numbers_with_yield),
     ]
 
     for name, function in functions:
