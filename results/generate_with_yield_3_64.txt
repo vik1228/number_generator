@@ -1,0 +1,5 @@
+Generate with yield (N=3, nums=64)
+['444', '446', '464', '466', '644', '646', '664', '666']
+Length of list: 8
+(Expected length 2^3 = 8)
+Execution time: 3996200 ns , 3996.2 us , 3.9962 ms, 0.0039962 s 

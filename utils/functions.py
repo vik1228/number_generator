@@ -40,6 +40,33 @@ def generate_numbers_with_brute_force(n=2, nums='357'):
     return numbers
 
 
+def generate_numbers_with_yield(n=2, nums='357'):
+    """
+    Generate numbers with yield generator
+    :param n: number of digits (n-wide)
+    :param nums: possible digits
+    :return: list of numbers (string-format)
+    """
+    def number_generator(w):
+        num = 0
+        limit = int('1' + '0' * w)
+        while num < limit:
+            yield "{:0{}.{}f}".format(num, w, 0)
+            num = num + 1
+
+    all_digits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
+    digits = {*nums}
+    other_digits = all_digits.difference(digits)
+    numbers = []
+    for number in number_generator(n):
+        for other_digit in other_digits:
+            if other_digit in number:
+                break
+        else:
+            numbers.append(number)
+    return numbers
+
+
 def generate_numbers_with_backtrack(n=2, nums='357'):
     """
     Generate numbers with backtrack

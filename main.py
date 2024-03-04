@@ -6,7 +6,8 @@ Created on 2024.02.26.
 Number generator 
 """
 import time
-from utils.functions import generate_numbers_with_builtin, generate_numbers_with_brute_force, generate_numbers_with_backtrack
+from utils.functions import (generate_numbers_with_builtin, generate_numbers_with_brute_force,
+                             generate_numbers_with_backtrack,generate_numbers_with_yield)
 
 
 if __name__ == "__main__":
@@ -18,7 +19,8 @@ if __name__ == "__main__":
     functions = [
         ("Generate with builtin", generate_numbers_with_builtin),
         ("Generate with brute force", generate_numbers_with_brute_force),
-        ("Generate with backtrack", generate_numbers_with_backtrack)
+        ("Generate with backtrack", generate_numbers_with_backtrack),
+        ("Generate with generator", generate_numbers_with_yield()),
     ]
 
     for name, function in functions:
