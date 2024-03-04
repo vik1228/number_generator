@@ -5,7 +5,8 @@ Created on 2024.02.29.
 @author: vik1228
 Simple (smoke) test for all generator
 """
-from utils.functions import generate_numbers_with_builtin, generate_numbers_with_brute_force, generate_numbers_with_backtrack
+from utils.functions import (generate_numbers_with_builtin, generate_numbers_with_brute_force,
+                             generate_numbers_with_backtrack, generate_numbers_with_yield)
 
 N = 2
 NUMS = '34'
@@ -16,7 +17,9 @@ EXPECTED_RESULT = {'33', '34', '43', '44'}
 functions = [
     ("Generate with builtin", generate_numbers_with_builtin),
     ("Generate with brute force", generate_numbers_with_brute_force),
-    ("Generate with backtrack", generate_numbers_with_backtrack)
+    ("Generate with backtrack", generate_numbers_with_backtrack),
+    ("Generate with yield", generate_numbers_with_yield)
+
 ]
 
 for name, function in functions:
